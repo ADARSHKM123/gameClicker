@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.click-button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.click-button:active {
+  transform: scale(0.95);
+}
+
+.notifications {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.notification {
+  background: #ffeb3b;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.resetBtn {
+  margin: 20px auto 0; 
+  padding: 10px 25px;
+  width: 100px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: block; /* Ensure it behaves as a block element */
+}
